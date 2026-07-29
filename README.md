@@ -58,7 +58,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **Moonlight** | Open-source client for NVIDIA GameStream and Sunshine. | [OneLiberty](https://github.com/OneLiberty/moonlight-chrome-tizen) | `v1.2.1` |
 | **Moonlight (No Gamemode)** | Open-source client for NVIDIA GameStream and Sunshine with gamemode disabled. | [MrPhaze62](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode) | `samsung_wasm-21031261929` |
 | **Moonlight (ToypoodleGaming)** | Moonlight NVIDIA GameStream / Sunshine client (ToypoodleGaming fork). | [toypoodlegaming](https://github.com/toypoodlegaming/moonlight-chrome-tizen) | `samsung_wasm-21031332442` |
-| **Moonlight-Tizen** | Open-source client for NVIDIA GameStream and Sunshine Tizen OS 5.5 or higher. | [BrightCraft](https://github.com/brightcraft/moonlight-tizen) | `v1.13.1` |
+| **Moonlight-Tizen** | Open-source client for NVIDIA GameStream and Sunshine Tizen OS 5.5 or higher. | [BrightCraft](https://github.com/brightcraft/moonlight-tizen) | `v1.14.0` |
 | **Nuvio** | TV-first streaming UI for Samsung Tizen. | [NuvioMedia](https://github.com/NuvioMedia/NuvioWeb) | `0.3.26-beta` |
 | **OTTplay FOSS** | FOSS OTT / IPTV thin client for Tizen. | [prog4food](https://github.com/prog4food/ottplay-foss-thin-clients) | `Sat, 21 Jan 2023 15:15:16 GMT` |
 | **PlayerAVPlay** | AVPlayer app | [yadPe](https://github.com/yadPe/PlayerAVPlay) | `latest` |
@@ -70,7 +70,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **Tailscale** | Tailscale exit-node app for Samsung Tizen TV (experimental; advertises the TV as a tailnet exit node). | [PatrickSt1991](https://github.com/PatrickSt1991/tailscale-tizen) | `tv8-tester` |
 | **TizenBrew** | A way to experience modded websites and you can install newer apps without fighting with Tizen Studio. | [reisxd](https://github.com/reisxd/TizenBrew) | `v2.0.5` |
 | **TizenFeed** | News / RSS feed sample app for Tizen TV. | [judithsirera](https://github.com/judithsirera/TizenFeed) | `8c42b51` |
-| **TizenTube** | TizenTube enhances your favourite streaming websites viewing experience by removing ads and adding support for Sponsorblock. | [reisxd](https://github.com/reisxd/TizenTube) | `v2.0.0` |
+| **TizenTube** | TizenTube enhances your favourite streaming websites viewing experience by removing ads and adding support for Sponsorblock. | [reisxd](https://github.com/reisxd/TizenTube) | `v2.0.1` |
 | **TizenTVAudioRecorder** | HTML5 Audio Recorder (kalaoke App). | [TizenTVWebApp](https://github.com/TizenTVWebApp/TizenTVAudioRecorder) | `latest` |
 | **TizenYouTube** | YouTube client for Samsung Tizen TVs. | [sunnyden](https://github.com/sunnyden/TizenYoutube) | `79bfe9e` |
 | **TransportTycoonDeluxe** | OpenTTD is an open source simulation game based upon Transport Tycoon Deluxe. | [dos-ise](https://github.com/dos-ise/openttd-tizen) | `Release` |
