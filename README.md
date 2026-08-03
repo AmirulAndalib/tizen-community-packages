@@ -48,7 +48,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **Fireplace** | Transform your Samsung Smart TV into a fireplace. | [thonythony](https://github.com/thonythony/fireplace) | `a4a04a1` |
 | **Fladder** | Jellyfin client for Samsung Tizen TV, built with Flutter (native .tpk). | [popdollar](https://github.com/popdollar/Fladder-Tizen) | `Tizen` |
 | **Flixor-Tizen** | Modern cross-platform Plex client. Ported to Tizen OS. | [Flixor-Tizen](https://github.com/PatrickSt1991/flixor-tizen) | `v1.0.1-2026-07-24-1215` |
-| **GameBoy-Emulator** | A Game Boy (DMG) emulator. | [dos-ise](https://github.com/dos-ise/GB-EMU_Tizen) | `Latest` |
+| **GameBoy-Emulator** | A Game Boy (DMG) emulator. | [dos-ise](https://github.com/dos-ise/GB-EMU_Tizen) | `gb` |
 | **HackTV** | IPTV client for Samsung Tizen TVs. | [kosmodrey](https://github.com/kosmodrey/hackTV) | `bf27ba9` |
 | **HyperTizen** | Hyperion / HyperHDR ambient-light capturer for Samsung Tizen TV (native .tpk; requires TizenBrew for the UI). | [reisxd](https://github.com/reisxd/HyperTizen) | `v1.0.0` |
 | **iperf3 TV** | Measures your Samsung TV's network throughput to an iperf3 server, upload or download. Requires a small WebSocket-to-TCP relay on your LAN. | [DmitryMaksakov](https://github.com/DmitryMaksakov/samsung-tv-iperf3) | `d20ac9f` |
@@ -59,7 +59,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **Moonlight (No Gamemode)** | Open-source client for NVIDIA GameStream and Sunshine with gamemode disabled. | [MrPhaze62](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode) | `samsung_wasm-21031261929` |
 | **Moonlight (ToypoodleGaming)** | Moonlight NVIDIA GameStream / Sunshine client (ToypoodleGaming fork). | [toypoodlegaming](https://github.com/toypoodlegaming/moonlight-chrome-tizen) | `samsung_wasm-21031332442` |
 | **Moonlight-Tizen** | Open-source client for NVIDIA GameStream and Sunshine Tizen OS 5.5 or higher. | [BrightCraft](https://github.com/brightcraft/moonlight-tizen) | `v1.14.0` |
-| **Nuvio** | TV-first streaming UI for Samsung Tizen. | [NuvioMedia](https://github.com/NuvioMedia/NuvioWeb) | `0.3.28-beta` |
+| **Nuvio** | TV-first streaming UI for Samsung Tizen. | [NuvioMedia](https://github.com/NuvioMedia/NuvioWeb) | `0.3.29-beta` |
 | **OTTplay FOSS** | FOSS OTT / IPTV thin client for Tizen. | [prog4food](https://github.com/prog4food/ottplay-foss-thin-clients) | `Sat, 21 Jan 2023 15:15:16 GMT` |
 | **PlayerAVPlay** | AVPlayer app | [yadPe](https://github.com/yadPe/PlayerAVPlay) | `latest` |
 | **React IPTV** | IPTV player for Samsung Tizen TV, built with React. | [anandsimmy](https://github.com/anandsimmy/react-iptv) | `7a7dcc2` |
