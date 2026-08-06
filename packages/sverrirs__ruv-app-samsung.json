@@ -2,7 +2,7 @@
   "name": "RÚV",
   "description": "Apps for RÚV, the Icelandic national broadcaster: Sarpur on demand, Barnaefni for children, Unglingar for teens, Menntun for education, and Útvarp radio (not affiliated with RÚV)",
   "repo": "sverrirs/ruv-app-samsung",
-  "repo_label": "sverrirs",
+  "repo_label": "RÚV VOD",
   "source": "release",
   "branch": "master",
   "assets": [
