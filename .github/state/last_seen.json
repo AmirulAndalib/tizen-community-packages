@@ -32,6 +32,8 @@
   "release:reisxd/TizenBrew": "v2.0.5",
   "release:reisxd/TizenTube": "v2.0.1",
   "release:sfsdffesfsfg-cloud/tacplayer": "v0.1.0",
+  "release:sverrirs/ruv-app-samsung": "2026.08.06-2115",
+  "release:sverrirs/ruv-live-samsung": "2026.08.06",
   "release:toypoodlegaming/moonlight-chrome-tizen": "samsung_wasm-21031332442",
   "direct:Apps2Samsung/tizen-community-packages": "etag:\"76c7abc2fc40f84b17ac2acf306749e29bf1461541ceb65d5600f2f5e6555842\"|mod:|len:3130441",
   "direct:KaashDev/TVapp": "etag:\"e5943bc9a636a9d3b4a433a5ec11b98a850873ef222389d67027b81bff703fd3\"|mod:|len:45372",

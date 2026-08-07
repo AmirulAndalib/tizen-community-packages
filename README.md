@@ -1,7 +1,7 @@
 # 🌐 Tizen Community Packages
 [![Sync Tizen Community Packages](https://github.com/Apps2Samsung/tizen-community-packages/actions/workflows/sync-packages.yml/badge.svg)](https://github.com/Apps2Samsung/tizen-community-packages/actions/workflows/sync-packages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Packages](https://img.shields.io/badge/packages-41-blue.svg)](#-current-packages)
+[![Packages](https://img.shields.io/badge/packages-43-blue.svg)](#-current-packages)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-green.svg)](../../issues)
 [![Tizen](https://img.shields.io/badge/Platform-Tizen-lightgrey.svg)](https://www.tizen.org/)
 [![Community](https://img.shields.io/badge/Community-Driven-orange.svg)](#)
@@ -64,6 +64,8 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **PlayerAVPlay** | AVPlayer app | [yadPe](https://github.com/yadPe/PlayerAVPlay) | `latest` |
 | **React IPTV** | IPTV player for Samsung Tizen TV, built with React. | [anandsimmy](https://github.com/anandsimmy/react-iptv) | `7a7dcc2` |
 | **Reiverr** | A clean combined interface for Jellyfin, TMDB, Radarr and Sonarr, as well as a replacement to Overseerr. | [aleksilassila](https://github.com/aleksilassila/reiverr) | `dbdd50d` |
+| **RÚV** | Apps for RÚV, the Icelandic national broadcaster: Sarpur on demand, Barnaefni for children, Unglingar for teens, Menntun for education, and Útvarp radio (not affiliated with RÚV) | [RÚV VOD](https://github.com/sverrirs/ruv-app-samsung) | `2026.08.06-2115` |
+| **RÚV Live** | Live TV from RÚV, the Icelandic national broadcaster: the RÚV and RÚV 2 channels, with the running schedule and rewind inside the live window (not affiliated with RÚV) | [RÚV Live](https://github.com/sverrirs/ruv-live-samsung) | `2026.08.06` |
 | **Sportlink Club Viewer** | Solution for sports clubs to display match information in real time and in a clear, organized way on screens throughout the club! | [PatrickSt1991](https://github.com/PatrickSt1991/Sportlink.Club.Info.Viewer) | `v1.0.5` |
 | **StreamVault** | IPTV streaming app for Samsung Tizen smart TVs | [StreamVault](https://github.com/PatrickSt1991/streamvault) | `v1.0.0-2026-06-21-1058` |
 | **Stremio (Tizen 4)** | Stremio media center packaged for Tizen 4.0 devices. | [Apps2Samsung](https://github.com/Apps2Samsung/tizen-community-packages) | `latest` |
