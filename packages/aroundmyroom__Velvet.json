@@ -1,0 +1,8 @@
+{
+  "name": "Velvet",
+  "description": "Velvet, a music server",
+  "repo": "aroundmyroom/Velvet",
+  "source": "release",
+  "branch": "release",
+  "output_name": "Velvet.wgt"
+}
