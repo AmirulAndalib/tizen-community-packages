@@ -1,7 +1,7 @@
 # 🌐 Tizen Community Packages
 [![Sync Tizen Community Packages](https://github.com/Apps2Samsung/tizen-community-packages/actions/workflows/sync-packages.yml/badge.svg)](https://github.com/Apps2Samsung/tizen-community-packages/actions/workflows/sync-packages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Packages](https://img.shields.io/badge/packages-43-blue.svg)](#-current-packages)
+[![Packages](https://img.shields.io/badge/packages-44-blue.svg)](#-current-packages)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-green.svg)](../../issues)
 [![Tizen](https://img.shields.io/badge/Platform-Tizen-lightgrey.svg)](https://www.tizen.org/)
 [![Community](https://img.shields.io/badge/Community-Driven-orange.svg)](#)
@@ -80,6 +80,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **TVapp** | Enable seamless playback of HLS/m3u8 streams as channels. | [KaashDev](https://github.com/KaashDev/TVapp) | `latest` |
 | **TVideoPlayer** | Tizen TV HTML video player based on videojs. | [TizenTVWebApp](https://github.com/TizenTVWebApp/TVideoPlayer) | `latest` |
 | **Twitch** | Twitch client for Samsung Smart TVs 2015 and newer models. | [fgl27](https://github.com/fgl27/smarttv-twitch) | `ca31512` |
+| **Velvet** | Velvet, a music server | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `v0.0.1` |
 | **VLC-Tizen-tv** | VLC Like player for your Samsung TV. | [PatrickSt1991](https://github.com/PatrickSt1991/vlc-tizen-tv) | `v1.2.1-20260724-1438` |
 
 > 💡 Want your app listed here? See the [Contributing](#-contributing--requesting-apps) section below.
