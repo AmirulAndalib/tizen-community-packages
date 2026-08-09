@@ -1,8 +1,10 @@
 {
-  "name": "Velvet",
-  "description": "Velvet, a music server",
+  "name": "Velvet TV",
+  "description": "Big-screen TV client for the Velvet self-hosted music server.",
   "repo": "aroundmyroom/Velvet",
-  "source": "release",
-  "branch": "release",
-  "output_name": "Velvet.wgt"
+  "source": "build",
+  "branch": "main",
+  "project_path": "webapp/tizen",
+  "skip_npm": true,
+  "output_name": "Velvet-TV.wgt"
 }
