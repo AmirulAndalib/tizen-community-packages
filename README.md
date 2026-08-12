@@ -40,7 +40,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 |----------------|----------------|------------------|------------|
 | **AirTizen** | AirPlay receiver for Samsung Tizen TV — stream audio/video to older Samsung TVs. | [MrHumanRebel](https://github.com/MrHumanRebel/airtizen) | `1.1` |
 | **AniLiberty** | Unofficial AniLibria anime client for Samsung Tizen TV. | [CoreDip](https://github.com/CoreDip/anilibria-tizen-wgt) | `v1.1.0` |
-| **Beam-TV** | Open-source USB and DLNA media player for Samsung Tizen TVs — subtitles, resume playback, remote navigation, and a local companion server. | [TAGISWILD](https://github.com/TAGISWILD/beam-tv) | `v1.0.0` |
+| **Beam-TV** | Open-source USB and DLNA media player for Samsung Tizen TVs — subtitles, resume playback, remote navigation, and a local companion server. | [TAGISWILD](https://github.com/TAGISWILD/beam-tv) | `v1.0.1` |
 | **Chiaki-Tizen** | An open source PlayStation remote play project serving as the next-generation of Chiaki. | [Chiaki-Tizen](https://github.com/Trent407/chiaki-tizen) | `v0.1.0` |
 | **Chorus2-Tizen** | Chorus2-Tizen (Kodi) Samsung Tizen. | [Chorus2-Tizen](https://github.com/PatrickSt1991/chorus2-tizen) | `tizen-v21.x-1.0.1-2026-05-21-1443` |
 | **Doom** | A WebAssembly-powered port of Doom packaged as a Samsung Tizen TV application. | [dos-ise](https://github.com/dos-ise/doom-tizen) | `V1` |
@@ -80,7 +80,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **TVapp** | Enable seamless playback of HLS/m3u8 streams as channels. | [KaashDev](https://github.com/KaashDev/TVapp) | `latest` |
 | **TVideoPlayer** | Tizen TV HTML video player based on videojs. | [TizenTVWebApp](https://github.com/TizenTVWebApp/TVideoPlayer) | `latest` |
 | **Twitch** | Twitch client for Samsung Smart TVs 2015 and newer models. | [fgl27](https://github.com/fgl27/smarttv-twitch) | `ca31512` |
-| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `ff36376` |
+| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `5a74dc1` |
 | **VLC-Tizen-tv** | VLC Like player for your Samsung TV. | [PatrickSt1991](https://github.com/PatrickSt1991/vlc-tizen-tv) | `v1.2.1-20260724-1438` |
 
 > 💡 Want your app listed here? See the [Contributing](#-contributing--requesting-apps) section below.
