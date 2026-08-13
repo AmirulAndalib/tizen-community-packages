@@ -9,6 +9,7 @@
   "build:matifDreamIt/IPTV-Tizen-TV@main": "d8eb66b9874d54a225cf584824544925e7dd521f",
   "build:sunnyden/TizenYoutube@master": "79bfe9ef3b4f241daa2fac2aa847d9ef6ecf31e4",
   "build:thonythony/fireplace@master": "a4a04a16cb610e4ccaafd06ff64783429abdd94a",
+  "release:Apps2Samsung/overscan": "build-466729d",
   "release:CoreDip/anilibria-tizen-wgt": "v1.1.0",
   "release:MrHumanRebel/airtizen": "1.1",
   "release:MrPhaze62/moonlight-chrome-tizen-no-gamemode": "samsung_wasm-21031261929",
