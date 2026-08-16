@@ -1,9 +1,14 @@
 {
   "name": "Overscan",
   "description": "Sideloadable web browser for Samsung Tizen TVs: desktop user agent, JavaScript on, D-pad cursor.",
-  "repo": "Apps2Samsung/overscan",
+  "repo": "Apps2Samsung/Overscan",
   "repo_label": "Apps2Samsung",
   "source": "release",
   "branch": "release",
-  "output_name": "Overscan.tpk"
+  "assets": [
+    { "match": "Overscan-tizen4.tpk", "output_name": "Overscan-tizen4.tpk" },
+    { "match": "Overscan-tizen5.tpk", "output_name": "Overscan-tizen5.tpk" },
+    { "match": "Overscan-tizen8.tpk", "output_name": "Overscan-tizen8.tpk" },
+    { "match": "Overscan-tizen9.tpk",    "output_name": "Overscan-tizen9.tpk" }
+  ]
 }
