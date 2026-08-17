@@ -4,5 +4,7 @@
   "repo": "PatrickSt1991/tex-tizen",
   "source": "release",
   "branch": "release",
-  "output_name": "Kodi-TeX.wgt"
+  "assets": [
+    { "match": "\\.wgt$", "output_name": "Kodi-TeX.wgt" }
+  ]
 }
