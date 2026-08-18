@@ -1,0 +1,8 @@
+{
+    "name": "Pelagica",
+    "description": "A modern web, desktop and TV client for Jellyfin",
+    "repo": "PelagicaApp/pelagica",
+    "source": "release",
+    "branch": "release",
+    "output_name": "pelagica-tizen.wgt"
+}
