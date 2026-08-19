@@ -8,6 +8,7 @@
   "assets": [
     { "match": "Overscan-tizen4.tpk", "output_name": "Overscan-tizen4.tpk" },
     { "match": "Overscan-tizen5.tpk", "output_name": "Overscan-tizen5.tpk" },
+    { "match": "Overscan-tizen6.tpk", "output_name": "Overscan-tizen6.tpk" },
     { "match": "Overscan-tizen8.tpk", "output_name": "Overscan-tizen8.tpk" },
     { "match": "Overscan-nui.tpk",    "output_name": "Overscan-tizen9.tpk" }
   ]
