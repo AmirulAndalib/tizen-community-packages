@@ -1,0 +1,9 @@
+{
+  "name": "TVapp (Fixed)",
+  "description": "TVapp with community fixes: channel switching now works (was stuck on stream #1), a readable exit dialog, and a compact channel banner. Pending upstream KaashDev/TVapp#4.",
+  "repo": "PatrickSt1991/TVapp",
+  "repo_label": "PatrickSt1991 (fork)",
+  "source": "direct",
+  "url": "https://raw.githubusercontent.com/Apps2Samsung/tizen-community-packages/main/apps/TVApp.wgt",
+  "output_name": "TVApp-Fixed.wgt"
+}
