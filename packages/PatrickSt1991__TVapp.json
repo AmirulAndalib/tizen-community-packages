@@ -4,6 +4,6 @@
   "repo": "PatrickSt1991/TVapp",
   "repo_label": "PatrickSt1991 (fork)",
   "source": "direct",
-  "url": "https://raw.githubusercontent.com/Apps2Samsung/tizen-community-packages/main/apps/TVApp.wgt",
+  "url": "https://raw.githubusercontent.com/PatrickSt1991/TVapp/main/TVapp.wgt",
   "output_name": "TVApp-Fixed.wgt"
 }
