@@ -4,5 +4,7 @@
     "repo": "PelagicaApp/pelagica",
     "source": "release",
     "branch": "release",
-    "output_name": "pelagica-tizen.wgt"
+    "assets": [
+        { "match": "pelagica-tizen.wgt", "output_name": "pelagica-tizen.wgt" }
+    ]
 }
