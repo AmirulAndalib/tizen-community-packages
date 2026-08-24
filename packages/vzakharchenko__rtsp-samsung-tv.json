@@ -1,0 +1,12 @@
+{
+  "name": "RTSP Camera Viewer",
+  "description": "Display RTSP streams from IP cameras on your Samsung TV, with numpad channel switching and a 4-camera grid. Requires the companion rtsp-samsung-tv server (Node or Docker) running on your LAN.",
+  "repo": "vzakharchenko/rtsp-samsung-tv",
+  "repo_label": "vzakharchenko",
+  "source": "build",
+  "branch": "master",
+  "project_path": "CameraDevice",
+  "skip_npm": true,
+  "pre_build": "rm -f CameraDevice/CameraDevice.wgt",
+  "output_name": "RTSP-Camera-Viewer.wgt"
+}
