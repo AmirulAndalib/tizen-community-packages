@@ -81,11 +81,11 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **TizenYouTube** | YouTube client for Samsung Tizen TVs. | [sunnyden](https://github.com/sunnyden/TizenYoutube) | `79bfe9e` |
 | **TransportTycoonDeluxe** | OpenTTD is an open source simulation game based upon Transport Tycoon Deluxe. | [dos-ise](https://github.com/dos-ise/openttd-tizen) | `Release` |
 | **TVapp** | Enable seamless playback of HLS/m3u8 streams as channels. | [KaashDev](https://github.com/KaashDev/TVapp) | `latest` |
-| **TVapp (Fixed)** | TVapp with community fixes: channel switching now works (was stuck on stream #1), a readable exit dialog, a compact channel banner and larger on-screen text. Pending upstream KaashDev/TVapp#4. | [PatrickSt1991 (fork)](https://github.com/PatrickSt1991/TVapp) | `v1.0.1-20260821-2026` |
+| **TVapp (Fixed)** | TVapp with community fixes: channel switching now works (was stuck on stream #1), a readable exit dialog, a compact channel banner and larger on-screen text. Pending upstream KaashDev/TVapp#4. | [PatrickSt1991 (fork)](https://github.com/PatrickSt1991/TVapp) | `v1.0.1-20260826-0421` |
 | **TVideoPlayer** | Tizen TV HTML video player based on videojs. | [TizenTVWebApp](https://github.com/TizenTVWebApp/TVideoPlayer) | `latest` |
 | **Twitch** | Twitch client for Samsung Smart TVs 2015 and newer models. | [fgl27](https://github.com/fgl27/smarttv-twitch) | `ca31512` |
-| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `7b9b9fb` |
-| **VLC-Tizen-tv** | VLC Like player for your Samsung TV. | [PatrickSt1991](https://github.com/PatrickSt1991/vlc-tizen-tv) | `transcode-v1.0.1` |
+| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `b0ff42a` |
+| **VLC-Tizen-tv** | VLC Like player for your Samsung TV. | [PatrickSt1991](https://github.com/PatrickSt1991/vlc-tizen-tv) | `v1.3.0-20260815-1800` |
 
 > 💡 Want your app listed here? See the [Contributing](#-contributing--requesting-apps) section below.
 
