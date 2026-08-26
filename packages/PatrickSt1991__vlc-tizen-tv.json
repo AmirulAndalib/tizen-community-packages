@@ -4,5 +4,7 @@
   "repo": "PatrickSt1991/vlc-tizen-tv",
   "source": "release",
   "branch": "release",
-  "output_name": "VLC-TV.wgt"
+    "assets": [
+        { "match": "vlctv.wgt", "output_name": "VLC-TV.wgt" }
+    ]
 }
