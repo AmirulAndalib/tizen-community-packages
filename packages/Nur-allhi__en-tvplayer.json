@@ -1,0 +1,8 @@
+{
+  "name": "EN TV Player",
+  "description": "IPTV player for Samsung Tizen TVs with full remote control, DRM support, and per-channel proxy.",
+  "repo": "Nur-allhi/en-tvplayer",
+  "source": "release",
+  "branch": "main",
+  "output_name": "EN-IPTV_Player.wgt"
+}
