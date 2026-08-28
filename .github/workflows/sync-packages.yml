@@ -332,7 +332,7 @@ jobs:
       - name: Install jq & curl
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq curl git
+          sudo apt-get install -y jq curl git unzip
 
       - name: Compile manifests
         run: bash scripts/build-manifests.sh
@@ -401,6 +401,7 @@ jobs:
               for idx in $(seq 0 $((n_assets - 1))); do
                 match=$(jq -r ".releases[\"$repo\"].assets[$idx].match" "$CFG")
                 outname=$(jq -r ".releases[\"$repo\"].assets[$idx].output_name // \"\"" "$CFG")
+                extract=$(jq -r ".releases[\"$repo\"].assets[$idx].extract // \"\"" "$CFG")
                 url=$(echo "$json" | jq -r --arg m "$match" \
                   '(.assets // [])[] | select(.name == $m) | .browser_download_url' 2>/dev/null | head -n 1)
                 if [ -z "$url" ]; then
@@ -419,10 +420,12 @@ jobs:
                 fi
                 echo "Downloading $url -> external_wgts/$outname"
                 curl -L -o "external_wgts/$outname" "$url"
+                bash scripts/unwrap-zip.sh "external_wgts/$outname" "$extract"
               done
             else
               # Legacy style — first non-empty URL across all assets (matches old behavior).
               outname=$(jq -r ".releases[\"$repo\"].output_name" "$CFG")
+              extract=$(jq -r ".releases[\"$repo\"].extract // \"\"" "$CFG")
               url=$(echo "$json" | jq -r '(.assets // [])[] | .browser_download_url // empty' 2>/dev/null | head -n 1)
               if [ -z "$url" ]; then
                 echo "::warning title=Package skipped::No release asset found for $repo (latest or prerelease) — skipping this package."
@@ -434,6 +437,7 @@ jobs:
               fi
               echo "Downloading $url -> external_wgts/$outname"
               curl -L -o "external_wgts/$outname" "$url"
+              bash scripts/unwrap-zip.sh "external_wgts/$outname" "$extract"
             fi
           done
 
@@ -445,13 +449,14 @@ jobs:
         if: ${{ steps.config.outputs.config != '' }}
         run: |
           CFG="${{ steps.config.outputs.config }}"
-          jq -r '.direct | to_entries[] | "\(.key) \(.value.url // .value) \(.value.output_name // "")"' "$CFG" |
-          while read repo url outname; do
+          jq -r '.direct | to_entries[] | "\(.key) \(.value.url // .value) \(.value.output_name // "") \(.value.extract // "")"' "$CFG" |
+          while read -r repo url outname extract; do
             [ -n "$repo" ] || continue
             if [ -z "$outname" ] || [ "$outname" = "null" ]; then
               outname="${repo##*/}.wgt"
             fi
             curl -L -o "external_wgts/$outname" "$url"
+            bash scripts/unwrap-zip.sh "external_wgts/$outname" "$extract"
           done
 
       - uses: actions/upload-artifact@v4
@@ -479,6 +484,21 @@ jobs:
           cp built/**/*.wgt final_wgts/ 2>/dev/null || true
           cp external/*.wgt final_wgts/ 2>/dev/null || true
           cp external/*.tpk final_wgts/ 2>/dev/null || true
+
+          # A .wgt is itself a zip, so a zip *wrapping* a .wgt copies in here
+          # unnoticed and ships an uninstallable file. Drop those rather than
+          # exiting, so one bad upstream cannot sink the whole bundle.
+          command -v unzip >/dev/null || sudo apt-get install -y unzip
+          for f in final_wgts/*.wgt final_wgts/*.tpk; do
+            [ -e "$f" ] || continue
+            if unzip -Z1 "$f" 2>/dev/null | grep -qiE '\.(wgt|tpk)$'; then
+              echo "::warning title=Nested archive::$(basename "$f") contains a .wgt/.tpk — it is a zip wrapper, not a package. Set \"extract\" in its manifest. Dropping it from this bundle."
+              rm -f "$f"
+            elif ! unzip -Z1 "$f" 2>/dev/null | grep -qx 'config.xml'; then
+              echo "::warning title=No config.xml::$(basename "$f") has no config.xml at its root — it may not be a valid package."
+            fi
+          done
+
           echo "Final WGT files:"
           ls -l final_wgts
 
