@@ -37,13 +37,19 @@ jq -s '
       map(select(.source == "release"))
       | map({
           key: .repo,
-          value: ({ branch } + (if has("assets") then { assets } else { output_name } end))
+          value: ({ branch }
+                   + (if has("assets")  then { assets }  else { output_name } end)
+                   + (if has("extract") then { extract } else {} end))
         })
       | from_entries
     ),
     direct: (
       map(select(.source == "direct"))
-      | map({ key: .repo, value: { url, output_name } })
+      | map({
+          key: .repo,
+          value: ({ url, output_name }
+                   + (if has("extract") then { extract } else {} end))
+        })
       | from_entries
     )
   }

@@ -40,6 +40,7 @@ Examples: `PatrickSt1991/flixor-tizen` → `packages/PatrickSt1991__flixor-tizen
 |-------|------|-------|
 | `repo_label` | string | Link text for the README's Repository column. Defaults to the repo owner. |
 | `output_name` | string | Filename inside the bundle. Must end in `.wgt` or `.tpk`. Required for every type **except** a `release` that uses `assets[]`. |
+| `extract` | string | Only when upstream ships the package **inside a `.zip`**. Entry name or regex to pull out of the archive — see [Zip-wrapped downloads](#-zip-wrapped-downloads). |
 
 ### Which fields go with which `source`
 
@@ -48,13 +49,15 @@ Examples: `PatrickSt1991/flixor-tizen` → `packages/PatrickSt1991__flixor-tizen
 | `branch` | ✅ required | ✅ required | ❌ |
 | `output_name` | ✅ *(or `assets`)* | ✅ required | ✅ required |
 | `assets[]` | ✅ *(or `output_name`)* | ❌ | ❌ |
+| `extract` | ⬜ optional | ❌ | ⬜ optional |
 | `url` | ❌ | ❌ | ✅ required |
 | `project_path` | ❌ | ⬜ optional | ❌ |
 | `skip_npm` | ❌ | ⬜ optional | ❌ |
 | `pre_build` | ❌ | ⬜ optional | ❌ |
 | `overlay` | ❌ | ⬜ optional | ❌ |
 
-For a `release`, `output_name` and `assets[]` are **mutually exclusive** — use exactly one.
+For a `release`, `output_name` and `assets[]` are **mutually exclusive** — use exactly one. With
+`assets[]`, put `extract` on the individual asset entry rather than at the top level.
 
 ---
 
@@ -112,6 +115,42 @@ name) and the `output_name` to save it as:
   ]
 }
 ```
+
+---
+
+## 🗜️ Zip-wrapped downloads
+
+Some upstreams publish their `.wgt` **inside a `.zip`** instead of as a bare release asset. Without
+`extract` the sync would download that zip and simply rename it to `output_name`, producing a
+zip-of-a-`.wgt` that installs on nothing — and it fails *silently*, because a `.wgt` is itself a zip,
+so no glob or copy downstream notices.
+
+Set `extract` to the entry name (or a regex) to pull out of the archive:
+
+```json
+{
+  "name": "EN TV Player",
+  "description": "IPTV player for Samsung Tizen TVs with full remote control, DRM support, and per-channel proxy.",
+  "repo": "Nur-allhi/en-tvplayer",
+  "source": "release",
+  "branch": "main",
+  "extract": "[.]wgt$",
+  "output_name": "EN-IPTV_Player.wgt"
+}
+```
+
+The download is replaced in place by the extracted entry, then kept under `output_name`. With
+`assets[]`, `extract` goes on the entry whose asset is the zip:
+
+```json
+"assets": [
+  { "match": "MyApp-.*[.]zip$", "extract": "[.]wgt$", "output_name": "MyApp.wgt" }
+]
+```
+
+If nothing in the archive matches, the sync warns and leaves the download untouched rather than
+failing the run. As a backstop, the publish job inspects every file in the final bundle and drops
+any `.wgt`/`.tpk` that turns out to contain another `.wgt`/`.tpk`.
 
 ---
 
