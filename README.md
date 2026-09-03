@@ -96,7 +96,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 We welcome **community contributions** and **app suggestions**!
 
 ### 💬 Request an App
-Open a new [Issue](../../issues/new?template=request-app.md) to suggest an app for future bundles.  
+Open a new [Issue](../../issues/new?template=request-app.yml) to suggest an app for future bundles.  
 Include:
 - App name
 - Description
@@ -119,6 +119,21 @@ Your app should be:
 > ⚠️ **Important:**  
 > We can only include applications that are **open-source** and **freely distributable**.  
 > Please make sure you have the legal right to redistribute any software you contribute.
+
+### 🚫 What We Can't Include
+
+- **Commercial streaming apps** — Netflix, Disney+, Prime Video, HBO Max, Spotify, official YouTube and friends.
+  These are partner-signed and their DRM is provisioned against the TV they shipped on, so a copied `.wgt`
+  can't legally be redistributed and wouldn't activate even if it installed. They're already built into most
+  Samsung TVs.
+- **Modded, cracked or "premium unlocked" builds** of paid apps or services.
+- **Closed-source packages** with no license that permits redistribution.
+
+Requests for these get closed as `wontfix`. It isn't gatekeeping — they simply can't work as side-loaded packages.
+
+> 🏨 **Hospitality / hotel TVs (`HG…` models):** side-loading needs developer mode, which is enabled from the
+> Smart Hub **Apps** screen — hospitality firmware doesn't expose it. Nothing in this repo can be installed on
+> those sets until the TV is taken out of hospitality mode.
 
 ---
 
