@@ -9,6 +9,20 @@ body:
         Suggesting an app you didn't build yourself? You're in the right place.
         If you *have* packaged it, use the **Contribute an App** form (or open a pull request) instead.
 
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **Please check this list first — these can't be added:**
+        >
+        > - **Commercial streaming apps** (Netflix, Disney+, Prime Video, HBO Max, Spotify, official YouTube, …).
+        >   They're partner-signed and DRM-bound to the TV they shipped on: not redistributable, and a copied
+        >   `.wgt` wouldn't activate anyway. Most Samsung TVs already have them built in.
+        > - **Modded, cracked or "premium unlocked"** builds of paid apps or services.
+        > - **Closed-source packages** with no license that permits redistribution.
+        >
+        > 🏨 On a **hospitality / hotel TV** (`HG…` model), side-loading isn't possible at all — developer mode
+        > lives in the Smart Hub **Apps** screen, which that firmware doesn't expose.
+
   - type: input
     id: name
     attributes:
@@ -50,3 +64,11 @@ body:
       description: "Screenshots, device compatibility, or anything else useful."
     validations:
       required: false
+
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: "✅ Before submitting"
+      options:
+        - label: "This isn't a commercial streaming app, a modded build, or otherwise not freely redistributable."
+          required: true
