@@ -54,15 +54,15 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **HyperTizen** | Hyperion / HyperHDR ambient-light capturer for Samsung Tizen TV (native .tpk; requires TizenBrew for the UI). | [reisxd](https://github.com/reisxd/HyperTizen) | `v1.0.0` |
 | **iperf3 TV** | Measures your Samsung TV's network throughput to an iperf3 server, upload or download. Requires a small WebSocket-to-TCP relay on your LAN. | [DmitryMaksakov](https://github.com/DmitryMaksakov/samsung-tv-iperf3) | `d20ac9f` |
 | **IPTV Manager** | IPTV manager for Samsung Tizen TV with Xtream Codes support and HLS playback. | [matifDreamIt](https://github.com/matifDreamIt/IPTV-Tizen-TV) | `d8eb66b` |
-| **KickTV** | Kick.com streaming client for Samsung Tizen TVs. | [corekill](https://github.com/corekill/kick-tv-tizen) | `v2.2.0` |
+| **KickTV** | Kick.com streaming client for Samsung Tizen TVs. | [corekill](https://github.com/corekill/kick-tv-tizen) | `v2.2.1` |
 | **Kodi-TeX** | Kodi TeX web interface ported to Samsung Tizen. | [PatrickSt1991](https://github.com/PatrickSt1991/tex-tizen) | `tex-tizen-v1.3.0-2026-06-09-0952` |
 | **Moonlight** | Open-source client for NVIDIA GameStream and Sunshine. | [OneLiberty](https://github.com/OneLiberty/moonlight-chrome-tizen) | `v1.2.1` |
 | **Moonlight (No Gamemode)** | Open-source client for NVIDIA GameStream and Sunshine with gamemode disabled. | [MrPhaze62](https://github.com/MrPhaze62/moonlight-chrome-tizen-no-gamemode) | `samsung_wasm-21031261929` |
 | **Moonlight (ToypoodleGaming)** | Moonlight NVIDIA GameStream / Sunshine client (ToypoodleGaming fork). | [toypoodlegaming](https://github.com/toypoodlegaming/moonlight-chrome-tizen) | `samsung_wasm-21031332442` |
 | **Moonlight-Tizen** | Open-source client for NVIDIA GameStream and Sunshine Tizen OS 5.5 or higher. | [BrightCraft](https://github.com/brightcraft/moonlight-tizen) | `v1.16.0` |
-| **Nuvio** | TV-first streaming UI for Samsung Tizen. | [NuvioMedia](https://github.com/NuvioMedia/NuvioWeb) | `1.0.6` |
+| **Nuvio** | TV-first streaming UI for Samsung Tizen. | [NuvioMedia](https://github.com/NuvioMedia/NuvioWeb) | `1.0.7` |
 | **OTTplay FOSS** | FOSS OTT / IPTV thin client for Tizen. | [prog4food](https://github.com/prog4food/ottplay-foss-thin-clients) | `Sat, 21 Jan 2023 15:15:16 GMT` |
-| **Overscan** | Sideloadable web browser for Samsung Tizen TVs: desktop user agent, JavaScript on, D-pad cursor. | [Apps2Samsung](https://github.com/Apps2Samsung/Overscan) | `build-2f3862d` |
+| **Overscan** | Sideloadable web browser for Samsung Tizen TVs: desktop user agent, JavaScript on, D-pad cursor. | [Apps2Samsung](https://github.com/Apps2Samsung/Overscan) | `build-d526114` |
 | **Pelagica** | A modern web, desktop and TV client for Jellyfin | [PelagicaApp](https://github.com/PelagicaApp/pelagica) | `4.9.0` |
 | **PlayerAVPlay** | AVPlayer app | [yadPe](https://github.com/yadPe/PlayerAVPlay) | `latest` |
 | **React IPTV** | IPTV player for Samsung Tizen TV, built with React. | [anandsimmy](https://github.com/anandsimmy/react-iptv) | `7a7dcc2` |
@@ -84,8 +84,8 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **TVapp** | Enable seamless playback of HLS/m3u8 streams as channels. | [KaashDev](https://github.com/KaashDev/TVapp) | `latest` |
 | **TVideoPlayer** | Tizen TV HTML video player based on videojs. | [TizenTVWebApp](https://github.com/TizenTVWebApp/TVideoPlayer) | `latest` |
 | **Twitch** | Twitch client for Samsung Smart TVs 2015 and newer models. | [fgl27](https://github.com/fgl27/smarttv-twitch) | `ca31512` |
-| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `62b893a` |
-| **VLC-Tizen-tv** | VLC Like player for your Samsung TV. | [PatrickSt1991](https://github.com/PatrickSt1991/vlc-tizen-tv) | `v1.4.0-20260903-0935` |
+| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `d762902` |
+| **VLC-Tizen-tv** | VLC Like player for your Samsung TV. | [PatrickSt1991](https://github.com/PatrickSt1991/vlc-tizen-tv) | `v1.4.1-20260906-0627` |
 
 > 💡 Want your app listed here? See the [Contributing](#-contributing--requesting-apps) section below.
 
