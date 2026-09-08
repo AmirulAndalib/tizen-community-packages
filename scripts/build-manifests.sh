@@ -4,6 +4,11 @@
 # packages/ is the source of truth (one file per app). This script compiles
 # those files back into the two aggregate manifests the sync workflow already
 # consumes, so nothing downstream had to change. Run from the repo root.
+#
+# Manifests with "enabled": false are dropped here. That single filter retires a
+# package everywhere downstream — change detection, the build matrix, the release
+# downloads and the published bundle all read only these compiled manifests — so
+# the file can stay in packages/ without shipping.
 set -euo pipefail
 
 PKG_DIR="${1:-packages}"
@@ -17,7 +22,8 @@ fi
 
 # --- repos-build.json : { "<repo>": { branch, project_path, output_name, [skip_npm], [pre_build] } }
 jq -s '
-  map(select(.source == "build"))
+  map(select(.enabled != false))
+  | map(select(.source == "build"))
   | map({
       key: .repo,
       value: (
@@ -32,7 +38,8 @@ jq -s '
 
 # --- repos-sync.json : { releases: {...}, direct: {...} }
 jq -s '
-  {
+  map(select(.enabled != false))
+  | {
     releases: (
       map(select(.source == "release"))
       | map({
@@ -55,7 +62,10 @@ jq -s '
   }
 ' "${files[@]}" > repos-sync.json
 
-echo "Compiled ${#files[@]} manifest(s):"
+disabled=$(jq -s '[.[] | select(.enabled == false) | .repo] | join(", ")' -r "${files[@]}")
+[ -n "$disabled" ] && echo "Skipped (enabled: false): $disabled"
+
+echo "Read ${#files[@]} manifest(s), compiled:"
 echo "  build:   $(jq 'length' repos-build.json)"
 echo "  release: $(jq '.releases | length' repos-sync.json)"
 echo "  direct:  $(jq '.direct  | length' repos-sync.json)"

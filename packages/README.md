@@ -41,6 +41,7 @@ Examples: `PatrickSt1991/flixor-tizen` → `packages/PatrickSt1991__flixor-tizen
 | `repo_label` | string | Link text for the README's Repository column. Defaults to the repo owner. |
 | `output_name` | string | Filename inside the bundle. Must end in `.wgt` or `.tpk`. Required for every type **except** a `release` that uses `assets[]`. |
 | `extract` | string | Only when upstream ships the package **inside a `.zip`**. Entry name or regex to pull out of the archive — see [Zip-wrapped downloads](#-zip-wrapped-downloads). |
+| `enabled` | boolean | `false` retires the package without deleting the file — see [Retiring a package](#-retiring-a-package). Defaults to `true`. |
 
 ### Which fields go with which `source`
 
@@ -230,6 +231,33 @@ Use when the `.wgt`/`.tpk` is hosted at a stable absolute URL (including one com
   "output_name": "Stremio-Tizen4.wgt"
 }
 ```
+
+---
+
+## 🚫 Retiring a package
+
+To stop shipping an app without deleting its manifest — upstream went away, the fix was merged
+upstream, the fork is superseded — set `enabled` to `false`:
+
+```json
+{
+  "name": "TVapp (Fixed)",
+  "description": "TVapp with community fixes.",
+  "repo": "PatrickSt1991/TVapp",
+  "enabled": false,
+  "source": "release",
+  "branch": "main",
+  "assets": [
+    { "match": "TVapp.wgt", "output_name": "TVApp-Fixed.wgt" }
+  ]
+}
+```
+
+`build-manifests.sh` drops disabled manifests before compiling `repos-build.json` /
+`repos-sync.json`, and every downstream job reads only those two files. So the package is no longer
+checked for upstream changes, built, downloaded or attached to the release, and its row disappears
+from the README table and the package-count badge. The file itself stays valid and fully
+schema-checked, so removing the line is all it takes to bring the app back.
 
 ---
 
