@@ -4,5 +4,6 @@
   "repo": "reisxd/TizenTube",
   "source": "release",
   "branch": "release",
+  "enabled": false,
   "output_name": "TizenTube.wgt"
 }
