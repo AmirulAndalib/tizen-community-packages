@@ -84,7 +84,7 @@ Please check the [Releases](../../releases) page for version-specific details.
 | **TVapp** | Enable seamless playback of HLS/m3u8 streams as channels. | [KaashDev](https://github.com/KaashDev/TVapp) | `latest` |
 | **TVideoPlayer** | Tizen TV HTML video player based on videojs. | [TizenTVWebApp](https://github.com/TizenTVWebApp/TVideoPlayer) | `latest` |
 | **Twitch** | Twitch client for Samsung Smart TVs 2015 and newer models. | [fgl27](https://github.com/fgl27/smarttv-twitch) | `ca31512` |
-| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `c8512aa` |
+| **Velvet TV** | Big-screen TV client for the Velvet self-hosted music server. | [aroundmyroom](https://github.com/aroundmyroom/Velvet) | `337a8fc` |
 | **VexonTV** | Live TV player for Samsung Tizen TVs: M3U, Xtream Codes and Stalker portals, provider EPG and a remote-first interface. | [VexonTV](https://github.com/DvzZDev/VexonTV) | `9aa670e` |
 | **VLC-Tizen-tv** | VLC Like player for your Samsung TV. | [PatrickSt1991](https://github.com/PatrickSt1991/vlc-tizen-tv) | `v1.5.0-20260914-1108` |
 
