@@ -1,8 +1,9 @@
 {
   "name": "StreamVault",
-  "description": "IPTV streaming app for Samsung Tizen smart TVs",
+  "description": "Self-hosted IPTV app for Samsung Tizen TVs; requires a separate StreamVault backend on the local network.",
   "repo": "PatrickSt1991/streamvault",
   "repo_label": "StreamVault",
+  "enabled": false,
   "source": "release",
   "branch": "release",
   "output_name": "StreamVault.wgt"
